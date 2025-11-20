@@ -1,0 +1,46 @@
+// Variables
+$primary-color: #4b7bec;
+$text-color: #333;
+$card-bg: #f1f2f6;
+
+// Global styles
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    padding: 20px;
+    text-align: center;
+}
+
+// Title styling
+.title {
+    color: $text-color;
+    margin-bottom: 20px;
+}
+
+// Card styling (nested SCSS)
+.card {
+    background: $card-bg;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+
+    p {
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+
+    // Button inside card
+    .btn {
+        background: $primary-color;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($primary-color, 10%);
+        }
+    }
+}

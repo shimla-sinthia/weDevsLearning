@@ -1,0 +1,29 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center; }
+
+.container {
+  background: #ffffff;
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .container h1 {
+    color: #333;
+    margin-bottom: 15px; }
+  .container h2 {
+    color: #4b7bec;
+    margin-top: 20px; }
+  .container ul, .container ol {
+    text-align: left;
+    margin-left: 40px; }
+    .container ul li, .container ol li {
+      margin-bottom: 5px;
+      color: #333; }
+      .container ul li:hover, .container ol li:hover {
+        color: #1d59e7; }
+
+/*# sourceMappingURL=nesting.css.map */

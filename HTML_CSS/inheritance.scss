@@ -1,0 +1,26 @@
+// Base message class
+.message {
+    padding: 12px 15px;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+// Inherit from .message using @extend
+.info {
+    @extend .message;
+    background-color: #3498db;
+}
+
+.success {
+    @extend .message;
+    background-color: #2ecc71;
+}
+
+.error {
+    @extend .message;
+    background-color: #e74c3c;
+}

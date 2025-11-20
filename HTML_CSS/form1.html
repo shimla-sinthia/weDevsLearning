@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+
+<form>
+
+    <div>
+        <input name="name" type="text" placeholder="Name">
+        <input name="password" type="password" placeholder="Password">
+    </div>
+
+    <div>
+        Favorite color? <br>
+        <input name="color" type="radio" value="red"> Red <br>
+        <input name="color" type="radio" value="green"> Green <br>
+        <input name="color" type="radio" value="blue"> Blue <br>
+        <input name="color" type="radio" value="other"> Other
+    </div>
+
+    <div>
+        <input name="country" list="countries" placeholder="Country">
+        <datalist id="countries">
+            <option value="Afghanistan">
+            <option value="Albania">
+            <option value="Algeria">
+            <option value="Andorra">
+            <option value="Angola">
+            <option value="Antigua & Deps">
+            <option value="Argentina">
+            <option value="Armenia">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Azerbaijan">
+            <option value="Bahamas">
+            <option value="Bahrain">
+            <option value="Bangladesh">
+            <option value="Barbados">
+            <option value="Belarus">
+            <option value="Belgium">
+            <option value="Bhutan">
+            <option value="Bolivia">
+            <option value="Brazil">
+            <!-- You can add more if you want -->
+        </datalist>
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+
+</body>
+</html>

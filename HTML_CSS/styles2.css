@@ -1,0 +1,52 @@
+/* Main container */
+#container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Heading */
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Box with text */
+.box {
+    padding: 15px;
+    background-color: #eef2ff;
+    border-left: 4px solid #5566dd;
+    margin-bottom: 25px;
+}
+
+/* Table section */
+.table-section {
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Border and padding */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header style */
+th {
+    background-color: #e2e2e2;
+}
+
+/* Highlighted row */
+.highlight {
+    background-color: #fff7cc;
+}

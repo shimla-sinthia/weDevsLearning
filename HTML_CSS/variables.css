@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  padding: 20px;
+  text-align: center; }
+
+.title {
+  color: #333;
+  margin-bottom: 20px; }
+
+.card {
+  background: #f1f2f6;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px; }
+  .card p {
+    color: #333;
+    margin-bottom: 15px; }
+  .card .btn {
+    background: #4b7bec;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; }
+    .card .btn:hover {
+      background: #1d59e7; }
+
+/*# sourceMappingURL=variables.css.map */

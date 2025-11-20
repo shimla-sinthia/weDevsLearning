@@ -1,0 +1,19 @@
+.message, .info, .success, .error {
+  padding: 12px 15px;
+  width: 300px;
+  margin: 10px auto;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center; }
+
+.info {
+  background-color: #3498db; }
+
+.success {
+  background-color: #2ecc71; }
+
+.error {
+  background-color: #e74c3c; }
+
+/*# sourceMappingURL=inheritance.css.map */

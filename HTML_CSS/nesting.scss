@@ -1,0 +1,47 @@
+// Variables
+$main-bg: #f7f7f7;
+$box-bg: #ffffff;
+$title-color: #333;
+$accent: #4b7bec;
+
+body {
+    background: $main-bg;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+// Main container
+.container {
+    background: $box-bg;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    h1 {
+        color: $title-color;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        color: $accent;
+        margin-top: 20px;
+    }
+
+    // Nesting lists
+    ul, ol {
+        text-align: left;
+        margin-left: 40px;
+
+        li {
+            margin-bottom: 5px;
+            color: $title-color;
+
+            &:hover {
+                color: darken($accent, 10%);
+            }
+        }
+    }
+}
