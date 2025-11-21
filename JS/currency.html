@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <h1>Currency Converter</h1>
+
+    <form id="form">
+        <input id="currency" type="text" placeholder="Enter currency code (e.g., EUR)">
+        <input type="submit" value="Convert">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.querySelector("#form").onsubmit = function (e) {
+            e.preventDefault();
+
+            fetch("https://api.exchangerate-api.com/v4/latest/USD")
+                .then(response => response.json())
+                .then(data => {
+
+                    // Get user input
+                    let currency = document.querySelector("#currency").value;
+
+                    // Convert input to uppercase (API uses uppercase keys)
+                    currency = currency.toUpperCase();
+
+                    // Check if user-entered currency exists in API results
+                    if (data.rates[currency] !== undefined) {
+
+                        const rate = data.rates[currency];
+
+                        // Update result div
+                        document.querySelector("#result").innerHTML =
+                            `1 USD is equal to ${rate} ${currency}`;
+
+                    } else {
+
+                        document.querySelector("#result").innerHTML =
+                            "Invalid currency";
+                    }
+                })
+                .catch(error => {
+                    console.log("Error:", error);
+                    document.querySelector("#result").innerHTML =
+                        "An error occurred while contacting the API.";
+                });
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+
+    <script>
+        let flag = 0;
+        // function hello(){
+        //     // alert("This is a simple alert message!");
+        //     if(flag === 0)
+        //         document.querySelector('h1').innerHTML = "GoodBye!";
+        //     else
+        //         document.querySelector('h1').innerHTML = "Hello!";
+
+        //     flag = 1 - flag;
+        // }
+      document.addEventListener('DOMContentLoaded', function() {
+          document.querySelector('#myForm').onsubmit = function() {
+              const nam = document.querySelector('#name').value;
+              alert(`Hello, ${nam}!`);
+          };
+      });
+    </script>
+</head>
+
+<body>
+
+    <h1>Hello!</h1>
+    <form id="myForm">
+        <label>
+            Name:
+            <input type="text" autofocus id ="name" placeholder="name" required>
+        </label>
+        <br>
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
