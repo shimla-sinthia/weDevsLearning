@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page</title>
+    <style>
+      div {
+        display: none;
+        /* text-align: center; */
+      }
+      /* div:nth-of-type(1) {
+      display: block;
+    } */
+
+      /* ---------- Added Professional Styling ---------- */
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f7;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 18px;
+        margin: 5px;
+        background: #4a90e2;
+        border: none;
+        border-radius: 7px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      button:hover {
+        background: #357ac9;
+      }
+
+      button:active {
+        transform: scale(0.96);
+      }
+
+      div {
+        background: white;
+        padding: 25px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        margin: 0;
+        color: #333;
+      }
+    </style>
+
+    <script>
+      function showPage(page) {
+        document.querySelectorAll("div").forEach((div) => {
+          div.style.display = "none";
+        });
+        document.querySelector(`#${page}`).style.display = "block";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("button").forEach((button) => {
+          button.onclick = function () {
+            showPage(this.dataset.page);
+          };
+        });
+      });
+      // Show the first page by default
+      // showPage("page1");
+    </script>
+  </head>
+
+  <body>
+    <button data-page="page1">Page 1</button>
+    <button data-page="page2">Page 2</button>
+    <button data-page="page3">Page 3</button>
+
+    <div id="page1">
+      <h1>This is Page 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim
+        labore ut velit a alias, recusandae soluta hic modi doloremque culpa
+        nostrum consectetur, in minus eum perspiciatis praesentium quidem
+        deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+        veniam architecto fugit. Quod soluta quam consectetur error temporibus
+        nulla, quos explicabo architecto veniam rerum aliquid voluptate suscipit
+        ipsum obcaecati ducimus.
+      </p>
+    </div>
+    <div id="page2">
+      <h1>Now this is Page 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        doloribus voluptates nam laudantium! Incidunt, sapiente ipsum. Voluptas
+        placeat molestiae culpa nihil rem tempore accusamus minima perspiciatis.
+        Ea, ratione reiciendis? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias laborum quam saepe possimus quia error
+        repudiandae itaque officia. Veritatis voluptatum quia doloribus, eos
+        aliquam rem aut earum atque amet ipsum.
+      </p>
+    </div>
+    <div id="page3">
+      <h1>Last is this, Page 3</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem
+        distinctio voluptas officiis rem sequi voluptatum delectus, sapiente vel
+        quod mollitia. Possimus exercitationem molestiae odit molestias at
+        dolores pariatur eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Non officiis velit cumque est incidunt nam animi eius
+        reiciendis cupiditate, molestiae ad, repellendus corrupti facilis
+        quaerat, provident accusamus? Blanditiis, ad at.
+      </p>
+    </div>
+  </body>
+</html>
