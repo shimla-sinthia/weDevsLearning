@@ -1,0 +1,2 @@
+This is section 2.  
+This content was fetched without reloading the page.
