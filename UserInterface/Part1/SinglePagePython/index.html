@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Single Page App</title>
+
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #content {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello!</h1>
+
+    <!-- Buttons -->
+    <button data-section="1">Section 1</button>
+    <button data-section="2">Section 2</button>
+    <button data-section="3">Section 3</button>
+
+    <!-- Content box (dynamic) -->
+    <div id="content">
+        Click a section to load content...
+    </div>
+    <script src="page.js"></script>
+
+</body>
+</html>
+
+
